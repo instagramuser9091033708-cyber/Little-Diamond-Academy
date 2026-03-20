@@ -1,1 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(to bottom, #3a7bd5, #00d2ff);
+}
 
+/* HEADER */
+.header {
+  padding: 15px;
+  color: white;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 40px;
+}
+
+.lang {
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  width: 30%;
+}
+
+.card.active {
+  border: 2px solid #3a7bd5;
+}
+
+/* NOTICE */
+.notice {
+  margin: 15px;
+  padding: 10px;
+  background: #0d47a1;
+  color: yellow;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 15px;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+/* BOTTOM NAV */
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
