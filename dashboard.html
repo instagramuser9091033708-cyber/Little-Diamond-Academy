@@ -2,15 +2,124 @@
 <html>
 <head>
   <title>Dashboard</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: linear-gradient(to bottom, #4facfe, #e0e5ec);
+    }
+
+    .header {
+      background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+      color: white;
+      padding: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .header h2 {
+      margin: 0;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      margin-top: -30px;
+    }
+
+    .card {
+      background: #e0e5ec;
+      padding: 15px;
+      width: 80px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px #a3b1c6,
+                  -5px -5px 10px #ffffff;
+    }
+
+    .notice {
+      margin: 20px;
+      padding: 10px;
+      background: #0d47a1;
+      color: yellow;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .box {
+      background: #e0e5ec;
+      padding: 20px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px #a3b1c6,
+                  -5px -5px 10px #ffffff;
+    }
+
+    .box:active {
+      box-shadow: inset 5px 5px 10px #a3b1c6,
+                  inset -5px -5px 10px #ffffff;
+    }
+
+    .bottom {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+  </style>
 </head>
+
 <body>
 
-<h1>Welcome to School App</h1>
+  <div class="header">
+    <h2>🎓 Little Diamond Academy</h2>
+    <p>Smart Parent Portal</p>
+  </div>
 
-<p>Profile</p>
-<p>Gallery</p>
-<p>Result</p>
-<p>Payment</p>
+  <div class="cards">
+    <div class="card">95%<br>Attendance</div>
+    <div class="card">HW<br>Homework</div>
+    <div class="card">₹80<br>Fees</div>
+  </div>
+
+  <div class="notice">
+    📢 Annual sports result published!
+  </div>
+
+  <div class="grid">
+    <div class="box">👤 Profile</div>
+    <div class="box">🖼️ Gallery</div>
+    <div class="box">💬 Contact</div>
+
+    <div class="box">➕ Admission</div>
+    <div class="box">📚 Syllabus</div>
+    <div class="box">📄 Result</div>
+
+    <div class="box">🚌 Transport</div>
+    <div class="box">📍 Tracking</div>
+    <div class="box">💳 Payment</div>
+  </div>
+
+  <div class="bottom">
+    <div>🏠 Home</div>
+    <div>🔍 Search</div>
+    <div>🔔 Notice</div>
+    <div>⏱️ History</div>
+  </div>
 
 </body>
 </html>
